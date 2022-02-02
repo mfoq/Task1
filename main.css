@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	margin: 10px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+	grid-gap: 10px;
+}
+
+.container .box{
+	text-align: center;
+	background-color: #f9f9f9;
+	margin: 5px;
+	padding: 10px 0;
+	box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .box img{
+	border-radius: 50%;
+}
+.name{
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 1.5;
+}
+
+ .uname {
+	font-size: 12px;
+	color: #555;
+	cursor: pointer;
+	transition: all 0.2s;
+	width: fit-content;
+	margin: 0 auto 5px;
+}
+
+.uname:hover {
+	color:#4db6ac;
+}
+
+.container .box progress {
+  border-radius: 7px; 
+  width: 60%;
+  height: 20px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+  margin:10px 0;
+}
+
+.container .box progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 3px;
+}
+.container .box progress::-webkit-progress-value {
+  background-color: #4db6ac;
+  border-radius: 3px;
+}
+
+
+.testimonials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.testimonials .one {
+	flex-basis: calc(90% / 3);
+	margin: 20px 5px;
+	padding: 0 20px;
+}
+
+
+.testimonials .one:not(:last-child) {
+	border-right: 1px solid #999;
+
+}
+
+.testimonials .one h6{
+	color: #555;
+	font-size: 20px;
+}
+
+.testimonials .one p{
+	font-size: 14px;
+	color: #999;
+}
+
+a {
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	background-color:#4db6ac;
+	color: white;
+	padding: 5px 15px;
+	margin: 5px auto;
+	font-weight: bold;
+	transition: 0.2s;
+	border-radius: 5px;
+}
+
+.container .box a:hover{
+	opacity: 0.8;
+}
+
+.back{
+	width: 100%;
+	height: 250px;
+	background-color: #4db6ac;
+}
+
+.trainee-info {
+	position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 80px;
+    text-align: center;
+    width: 750px;
+    max-width: 100%;
+}
+
+.trainee-info img{
+	border-radius: 50%;
+}
+
+.trainee-info button{
+	background-color: #4db6ac;
+    border: none;
+    padding: 7px 20px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1.5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.trainee-info .contact{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	width: 100%;	
+}
+
+.trainee-info .contact li {
+	flex-basis: 100px;
+	padding: 10px 0;
+	flex-wrap: wrap;
+}
+
+
